@@ -4,8 +4,7 @@
 /**
  * main - Entry point
  *
- * Description: Get a random number and print the number
- * and if it is positive, negative, or zero
+ * Description: Print statements based on the last digit of the random number.
  *
  * @void: indicate no parameter
  *

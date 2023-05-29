@@ -1,12 +1,12 @@
 #include "main.h"
 /**
  * puts2 - Entry point
- * 
+ *
  * Description: 'function that prints every other character of a string,
- * 		starting with the first character, followed by a new line.'
+ *		starting with the first character, followed by a new line.'
  *
  * @str: The string to be treated
- * 
+ *
  * Return: void
  */
 

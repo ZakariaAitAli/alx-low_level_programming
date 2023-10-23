@@ -32,6 +32,10 @@ unsigned int _strspn(char *s, char *accept)
 			else if (accept[i] == '\0')
 				return (bytes);
 		}
+		if (!accept[i])
+		{
+			return bytes;
+		}
 
 		s++;
 	}

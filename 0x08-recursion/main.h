@@ -1,0 +1,17 @@
+#ifndef ALX_LOW_LEVEL_PROGRAMMING_MAIN_H
+#define ALX_LOW_LEVEL_PROGRAMMING_MAIN_H
+
+/*
+ * File: main.h
+ * Auth: Zakaria Ait Ali <zakariaaitali555@gmail.com>
+ * Desc: Header file containing declarations for all functions
+ * 	     used in the 0x08-recursion directory.
+ */
+
+/* _putchar */
+int _putchar(char c);
+
+/* Prototypes for mandatory functions */
+void _puts_recursion(char *s);
+
+#endif /* ALX_LOW_LEVEL_PROGRAMMING_MAIN_H */

@@ -1,3 +1,4 @@
 [submodule "0x11-printf"]
 	path = 0x11-printf
 	url = https://github.com/ZakariaAitAli/printf.git
+	branch = main

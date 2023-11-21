@@ -1,6 +1,8 @@
 #ifndef ALX_LOW_LEVEL_PROGRAMMING_MAIN_H
 #define ALX_LOW_LEVEL_PROGRAMMING_MAIN_H
 
+#include <stddef.h>
+
 /* _putchar - writes the character c to stdout */
 int _putchar(char c);
 
@@ -18,6 +20,8 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
+/* Prototypes */
+size_t print_listint(const listint_t *h);
 
 #endif /* ALX_LOW_LEVEL_PROGRAMMING_MAIN_H */
 

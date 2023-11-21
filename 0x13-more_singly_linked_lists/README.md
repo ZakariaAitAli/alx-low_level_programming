@@ -99,3 +99,36 @@ zakaria@ubuntu:~/0x13. More singly linked lists$ valgrind ./4-free_listint
 zakaria@ubuntu:~/0x13. More singly linked lists$
 ```
 
+### 5. Free
+Write a function that frees a `listint_t` list.
+* Prototype: `void free_listint2(listint_t **head);`
+* The function sets the `head` to `NULL`
+
+```shell
+zakaria@ubuntu:~/0x13. More singly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 5-main.c 3-add_nodeint_end.c 0-print_listint.c 5-free_listint2.c -o 5-free_listint2
+zakaria@ubuntu:~/0x13. More singly linked lists$ valgrind ./5-free_listint2
+==3260== Memcheck, a memory error detector
+==3260== Copyright (C)
+==3260== Command: ./5-free_listint2
+==3260==
+0
+1
+2
+3
+4
+98
+402
+1024
+(nil)
+==3260==
+==3260== HEAP SUMMARY:
+==3260==     in use at exit: 0 bytes in 0 blocks
+==3260==   total heap usage: 9 allocs, 9 frees, 1,152 bytes allocated
+==3260==
+==3260== All heap blocks were freed -- no leaks are possible
+==3260==    
+==3260== For counts of detected and suppressed errors, rerun with: -v
+==3260== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+zakaria@ubuntu:~/0x13. More singly linked lists$
+```
+

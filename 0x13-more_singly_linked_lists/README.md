@@ -50,3 +50,21 @@ zakaria@ubuntu:~/0x13. More singly linked lists$ ./2-add_nodeint
 zakaria@ubuntu:~/0x13. More singly linked lists$ 
 ```
 
+### 3. Add node at the end
+Write a function that adds a new node at the end of a `listint_t` list.
+* Prototype: `listint_t *add_nodeint_end(listint_t **head, const int n);`
+
+```shell
+zakaria@ubuntu:~/0x13. More singly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-add_nodeint_end.c 0-print_listint.c -o 3-add_nodeint_end
+zakaria@ubuntu:~/0x13. More singly linked lists$ ./3-add_nodeint_end
+0
+1
+2
+3
+4
+98
+402
+1024
+zakaria@ubuntu:~/0x13. More singly linked lists$ 
+```
+

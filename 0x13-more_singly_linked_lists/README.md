@@ -180,3 +180,32 @@ zakaria@ubuntu:~/0x13. More singly linked lists$ valgrind ./6-pop_listint
 zakaria@ubuntu:~/0x13. More singly linked lists$
 ```
 
+### 7. Get node at index
+Write a function that returns the nth node of a `listint_t` linked list.
+* Prototype: `listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);`
+* where `index` is the index of the node, starting at `0`
+* if the node does not exist, return `NULL`
+
+```shell
+zakaria@ubuntu:~/0x13. More singly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 7-main.c 3-add_nodeint_end.c 0-print_listint.c 5-free_listint2.c 7-get_nodeint.c -o 7-get_nodeint
+zakaria@ubuntu:~/0x13. More singly linked lists$ ./7-get_nodeint
+0
+1
+2
+3
+4
+98
+402
+1024
+98
+0
+1
+2
+3
+4
+98
+402
+1024
+zakaria@ubuntu:~/0x13. More singly linked lists$
+```
+

@@ -252,3 +252,81 @@ zakaria@ubuntu:~/0x13. More singly linked lists$ ./9-insert_nodeint
 zakaria@ubuntu:~/0x13. More singly linked lists$
 ```
 
+### 10. Delete at index
+Write a function that deletes the node at index `index` of a `listint_t` linked list.
+* Prototype: `int delete_nodeint_at_index(listint_t **head, unsigned int index);`
+* where `index` is the index of the node that should be deleted. Index starts at `0`
+* Returns: `1` if it succeeded, `-1` if it failed
+
+```shell
+zakaria@ubuntu:~/0x13. More singly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 10-main.c 3-add_nodeint_end.c 0-print_listint.c 5-free_listint2.c 10-delete_nodeint.c -o 10-delete_nodeint
+zakaria@ubuntu:~/0x13. More singly linked lists$ valgrind ./10-delete_nodeint
+==3371== Memcheck, a memory error detector
+==3371== Copyright (C)
+==3371== Command: ./10-delete_nodeint
+==3371==
+0
+1
+2
+3
+4
+98
+402
+1024
+-----------------
+0
+1
+2
+3
+4
+402
+1024
+-----------------
+1
+2
+3
+4
+402
+1024
+-----------------
+2
+3
+4
+402
+1024
+-----------------
+3
+4
+402
+1024
+-----------------
+4
+402
+1024
+-----------------
+402
+1024
+-----------------
+1024
+-----------------
+-----------------
+-----------------
+-----------------
+-----------------
+-----------------
+-----------------
+-----------------
+-----------------
+-----------------
+==3371==
+==3371== HEAP SUMMARY:
+==3371==     in use at exit: 0 bytes in 0 blocks
+==3371==   total heap usage: 9 allocs, 9 frees, 1,152 bytes allocated
+==3371==
+==3371== All heap blocks were freed -- no leaks are possible
+==3371==
+==3371== For counts of detected and suppressed errors, rerun with: -v
+==3371== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+zakaria@ubuntu:~/0x13. More singly linked lists$
+```
+

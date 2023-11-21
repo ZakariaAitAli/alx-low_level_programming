@@ -2,6 +2,7 @@
 #define ALX_LOW_LEVEL_PROGRAMMING_MAIN_H
 
 #include <stddef.h>
+#include <stdlib.h>
 
 /* _putchar - writes the character c to stdout */
 int _putchar(char c);
@@ -23,6 +24,7 @@ typedef struct listint_s
 /* Prototypes */
 size_t print_listint(const listint_t *h);
 size_t listint_len(const listint_t *h);
+listint_t *add_nodeint(listint_t **head, const int n);
 
 #endif /* ALX_LOW_LEVEL_PROGRAMMING_MAIN_H */
 

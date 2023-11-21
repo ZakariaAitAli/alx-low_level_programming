@@ -32,3 +32,21 @@ zakaria@ubuntu:~/0x13. More singly linked lists$ ./1-listint_len
 zakaria@ubuntu:~/0x13. More singly linked lists$ 
 ```
 
+### 2. Add node
+Write a function that adds a new node at the beginning of a `listint_t` list.
+* Prototype: `listint_t *add_nodeint(listint_t **head, const int n);`
+
+```shell
+zakaria@ubuntu:~/0x13. More singly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-add_nodeint.c 0-print_listint.c -o 2-add_nodeint
+zakaria@ubuntu:~/0x13. More singly linked lists$ ./2-add_nodeint
+1024
+402
+98
+4
+3
+2
+1
+0
+zakaria@ubuntu:~/0x13. More singly linked lists$ 
+```
+

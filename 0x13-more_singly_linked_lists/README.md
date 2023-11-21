@@ -209,3 +209,15 @@ zakaria@ubuntu:~/0x13. More singly linked lists$ ./7-get_nodeint
 zakaria@ubuntu:~/0x13. More singly linked lists$
 ```
 
+### 8. Sum list
+Write a function that returns the sum of all the data (n) of a `listint_t` linked list.
+* Prototype: `int sum_listint(listint_t *head);`
+* if the list is empty, return `0`
+
+```shell
+zakaria@ubuntu:~/0x13. More singly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 8-main.c 3-add_nodeint_end.c 0-print_listint.c 5-free_listint2.c 8-sum_listint.c -o 8-sum_listint
+zakaria@ubuntu:~/0x13. More singly linked lists$ ./8-sum_listint
+sum = 1534
+zakaria@ubuntu:~/0x13. More singly linked lists$
+```
+

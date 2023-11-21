@@ -132,3 +132,51 @@ zakaria@ubuntu:~/0x13. More singly linked lists$ valgrind ./5-free_listint2
 zakaria@ubuntu:~/0x13. More singly linked lists$
 ```
 
+### 6. Pop
+Write a function that deletes the head node of a `listint_t` linked list, and returns the head node’s data (n).
+* Prototype: `int pop_listint(listint_t **head);`
+* if the linked list is empty return `0`
+
+```shell
+zakaria@ubuntu:~/0x13. More singly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 6-main.c 3-add_nodeint_end.c 0-print_listint.c 5-free_listint2.c 6-pop_listint.c -o 6-pop_listint
+zakaria@ubuntu:~/0x13. More singly linked lists$ valgrind ./6-pop_listint
+==3299== Memcheck, a memory error detector
+==3299== Copyright (C)
+==3299== Command: ./6-pop_listint
+==3299==
+0
+1
+2
+3
+4
+98
+402
+1024
+- 0
+1
+2
+3
+4
+98
+402
+1024
+- 1
+2
+3
+4
+98
+402
+1024
+(nil)
+==3299==
+==3299== HEAP SUMMARY:
+==3299==     in use at exit: 0 bytes in 0 blocks
+==3299==   total heap usage: 9 allocs, 9 frees, 1,152 bytes allocated
+==3299==
+==3299== All heap blocks were freed -- no leaks are possible
+==3299==
+==3299== For counts of detected and suppressed errors, rerun with: -v
+==3299== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+zakaria@ubuntu:~/0x13. More singly linked lists$
+```
+

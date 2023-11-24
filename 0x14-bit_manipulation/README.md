@@ -141,3 +141,17 @@ CPU family:                         6
 Model:                              126
 zakaria@ubuntu:~/0x14. Binary$
 ```
+
+### 7. Crackme3
+
+Find the password for [this program](https://github.com/alx-tools/0x13.c.git).
+
+- Save the password in the file `101-password`
+- Your file should contain the exact password, no new line, no extra space
+- Hint: The program prints “Congratulations!” when the password is correct
+
+```shell
+zakaria@ubuntu:~/0x14. Binary$ ./crackme3 `cat 101-password`
+Congratulations!
+zakaria@ubuntu:~/0x14. Binary$
+```

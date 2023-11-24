@@ -100,3 +100,20 @@ zakaria@ubuntu:~/0x14. Binary$ ./4-clear_bit
 zakaria@ubuntu:~/0x14. Binary$
 ```
 
+### 5. 101
+
+Write a function that returns the number of bits you would need to flip to get from one number to another.
+
+- Prototype: `unsigned int flip_bits(unsigned long int n, unsigned long int m);`
+- You are not allowed to use the `%` or `/` operators
+
+```shell
+zakaria@ubuntu:~/0x14. Binary$ gcc -Wall -pedantic -Werror -Wextra 5-main.c 5-flip_bits.c -o 5-flip_bits
+zakaria@ubuntu:~/0x14. Binary$ ./5-flip_bits
+2
+5
+3
+1
+zakaria@ubuntu:~/0x14. Binary$
+```
+

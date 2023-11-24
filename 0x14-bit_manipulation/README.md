@@ -117,3 +117,27 @@ zakaria@ubuntu:~/0x14. Binary$ ./5-flip_bits
 zakaria@ubuntu:~/0x14. Binary$
 ```
 
+### 6. Endianness
+
+Write a function that checks the endianness.
+
+- Prototype: `int get_endianness(void);`
+- Returns: `0` if big endian, `1` if little endian
+
+```shell
+zakaria@ubuntu:~/0x14. Binary$ gcc -Wall -pedantic -Werror -Wextra 100-main.c 100-get_endianness.c -o 100-get_endianness
+zakaria@ubuntu:~/0x14. Binary$ ./100-get_endianness
+Little Endian
+zakaria@ubuntu:~/0x14. Binary$ lscpu | head
+Architecture:                       x86_64
+CPU op-mode(s):                     32-bit, 64-bit
+Address sizes:                      39 bits physical, 48 bits virtual
+Byte Order:                         Little Endian
+CPU(s):                             8
+On-line CPU(s) list:                0-7
+Vendor ID:                          GenuineIntel
+Model name:                         Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz
+CPU family:                         6
+Model:                              126
+zakaria@ubuntu:~/0x14. Binary$
+```

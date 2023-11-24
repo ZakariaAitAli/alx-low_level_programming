@@ -66,3 +66,20 @@ zakaria@ubuntu:~/0x14. Binary$ ./2-get_bit
 zakaria@ubuntu:~/0x14. Binary$
 ```
 
+### 3. 11
+
+Write a function that sets the value of a bit to `1` at a given index.
+
+- Prototype: `int set_bit(unsigned long int *n, unsigned int index);`
+- where `index` is the index, starting from `0` of the bit you want to set
+- Returns: `1` if it worked, or `-1` if an error occurred
+
+```shell
+zakaria@ubuntu:~/0x14. Binary$ gcc -Wall -pedantic -Werror -Wextra 3-main.c 3-set_bit.c -o 3-set_bit
+zakaria@ubuntu:~/0x14. Binary$ ./3-set_bit
+1056
+1024
+99
+zakaria@ubuntu:~/0x14. Binary$
+```
+

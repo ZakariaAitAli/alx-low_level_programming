@@ -15,4 +15,4 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m);
 /* Advanced */
 int get_endianness(void);
 
-#endif //ALX_LOW_LEVEL_PROGRAMMING_MAIN_H
+#endif /* ALX_LOW_LEVEL_PROGRAMMING_MAIN_H */

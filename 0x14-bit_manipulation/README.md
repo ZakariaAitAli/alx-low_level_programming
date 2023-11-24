@@ -83,3 +83,20 @@ zakaria@ubuntu:~/0x14. Binary$ ./3-set_bit
 zakaria@ubuntu:~/0x14. Binary$
 ```
 
+### 4. 100
+
+Write a function that sets the value of a bit to `0` at a given index.
+
+- Prototype: `int clear_bit(unsigned long int *n, unsigned int index);`
+- where `index` is the index, starting from `0` of the bit you want to set
+- Returns: `1` if it worked, or `-1` if an error occurred
+
+```shell
+zakaria@ubuntu:~/0x14. Binary$ gcc -Wall -pedantic -Werror -Wextra 4-main.c 4-clear_bit.c -o 4-clear_bit
+zakaria@ubuntu:~/0x14. Binary$ ./4-clear_bit
+0
+0
+96
+zakaria@ubuntu:~/0x14. Binary$
+```
+

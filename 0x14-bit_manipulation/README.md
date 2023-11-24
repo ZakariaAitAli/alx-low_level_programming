@@ -49,3 +49,20 @@ zakaria@ubuntu:~/0x14. Binary$ ./1-print_binary
 zakaria@ubuntu:~/0x14. Binary$
 ```
 
+### 2. 10
+
+Write a function that returns the value of a bit at a given index.
+
+- Prototype: `int get_bit(unsigned long int n, unsigned int index);`
+- where `index` is the index, starting from `0` of the bit you want to get
+- Returns: the value of the bit at index `index` or `-1` if an error occured
+
+```shell
+zakaria@ubuntu:~/0x14. Binary$ gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-get_bit.c -o 2-get_bit
+zakaria@ubuntu:~/0x14. Binary$ ./2-get_bit
+1
+1
+0
+zakaria@ubuntu:~/0x14. Binary$
+```
+

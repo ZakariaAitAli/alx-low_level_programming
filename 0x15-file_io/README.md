@@ -136,4 +136,37 @@ zakaria@ubuntu:~/0x15. File descriptors and permissions$
 
 ### 4.elf `Advanced`
 
+Write a program that displays the information contained in the `ELF` header at the start of an `ELF` file.
+
+- Usage: `elf_header elf_filename` 
+- Displayed information: 
+    - Magic 
+    - Class 
+    - Data 
+    - Version 
+    - OS/ABI 
+    - ABI Version 
+    - Type 
+    - Entry point address
+- Format: the same as `readelf -h` (version `2.26.1`)
+- If the file is not an `ELF` file, or on error, exit with status code `98` and display a comprehensive error message to `stderr`
+- You are allowed to use `lseek` once
+- You are allowed to use `read` a maximum of 2 times at runtime
+- You are allowed to have as many functions as you want in your source file
+- You are allowed to use printf
+
+```shell
+zakaria@ubuntu:~/0x15. File descriptors and permissions$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-elf_header.c -o elf_header
+zakaria@ubuntu:~/0x15. File descriptors and permissions$ ./elf_header 0-read_textfile
+ELF Header:
+  Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00
+  Class:                             ELF64
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              DYN (Shared object file)
+  Entry point address:               0x1160
+zakaria@ubuntu:~/0x15. File descriptors and permissions$
+```
 

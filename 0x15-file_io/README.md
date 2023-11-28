@@ -92,6 +92,24 @@ worldzaka@ubuntu:~/0x15. File descriptors and permissions$
 
 ### 2.Speak gently, she can hear `Mandatory`
 
+Write a function that appends text at the end of a file.
+
+- Prototype: `int append_text_to_file(const char *filename, char *text_content);`
+- where `filename` is the name of the file and `text_content` is the `NULL` terminated string to add at the end of the file
+- Return: `1` on success and `-1` on failure
+- Do not create the file if it does not exist
+- If `filename` is `NULL` return `-1`
+- If `text_content` is `NULL`, do not add anything to the file. Return `1` if the file exists and `-1` if the file does not exist or if you do not have the required permissions to write the file
+
+```shell
+zakaria@ubuntu:~/0x15. File descriptors and permissions$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-append_text_to_file.c -o 2-append_text_to_file
+zakaria@ubuntu:~/0x15. File descriptors and permissions$ ./2-append_text_to_file hello " World!
+> "
+-> 1)
+zakaria@ubuntu:~/0x15. File descriptors and permissions$ cat hello
+Hello World!
+zakaria@ubuntu:~/0x15. File descriptors and permissions$
+```
 
 ### 3.cp `Mandatory`
 

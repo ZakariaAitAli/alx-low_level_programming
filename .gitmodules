@@ -2,3 +2,6 @@
 	path = 0x11-printf
 	url = https://github.com/ZakariaAitAli/printf.git
 	branch = main
+[submodule "0x16-simple_shell"]
+	path = 0x16-simple_shell
+	url = https://github.com/ZakariaAitAli/simple_shell.git

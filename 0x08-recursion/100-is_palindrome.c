@@ -9,7 +9,7 @@ int is_palindrome(char *s);
 int palindrome_check(char *s, int len, int i);
 
 /**
- * find_strlen - Returns the length of a string.
+ * _strlen - Returns the length of a string.
  * @s: The string to be measured.
  *
  * Return: The length of the string.
@@ -17,9 +17,9 @@ int palindrome_check(char *s, int len, int i);
 
 int _strlen(char *s)
 {
-    if (!*s)
-        return (0);
-    return (1 + _strlen(s + 1));
+	if (!*s)
+		return (0);
+	return (1 + _strlen(s + 1));
 }
 
 /**

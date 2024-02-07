@@ -5,7 +5,7 @@
  * File: main.h
  * Auth: Zakaria Ait Ali <zakariaaitali555@gmail.com>
  * Desc: Header file containing declarations for all functions
- * 	     used in the 0x08-recursion directory.
+ *		 used in the 0x08-recursion directory.
  */
 
 /* _putchar */

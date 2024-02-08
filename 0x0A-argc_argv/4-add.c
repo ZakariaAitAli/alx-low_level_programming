@@ -17,18 +17,25 @@
 
 int main(int argc, char *argv[])
 {
-	int firstNumber, secondNumber, result;
+	int i, sum;
 
-	if (argc != 3)
+	if (argc <= 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-
-	firstNumber = atoi(argv[1]);
-	secondNumber = atoi(argv[2]);
-	result = firstNumber + secondNumber;
-
-	printf("%d\n", result);
+	i = 1;
+	sum = 0;
+	while (i < argc)
+	{
+		if(atoi(argv[i]) == 0 && *argv[i] != '0')
+		{
+			printf("Error\n");
+			return (1);
+		}
+		sum += atoi(argv[i]);
+		i++;
+	}
+	printf("%d\n", sum);
 	return (0);
 }
